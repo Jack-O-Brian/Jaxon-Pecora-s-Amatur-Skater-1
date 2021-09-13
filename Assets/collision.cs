@@ -20,9 +20,25 @@ public class collision : MonoBehaviour
 
     }
 
+    void collisionHandle(string tag)
+    {
+        switch (tag)
+        {
+            case "Floor":
+                break;
+            case "Stairs":
+                break;
+            case "Rails":
+                break;
+                
+            
+        }
+        
+    } 
+
     private void OnCollisionEnter2D(Collision2D other)
     {
-        Debug.Log(other.collider.tag);
+        collisionHandle(other.collider.tag);
         
     }
 }
