@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+// Handles collision
 public class collision : MonoBehaviour
 {
     public BoxCollider2D collider;
